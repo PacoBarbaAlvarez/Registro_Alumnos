@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="143dp"
+        android:layout_marginBottom="291dp"
+        android:text="Añadir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="236dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Escriba el nombre"
+        app:layout_constraintBottom_toTopOf="@+id/apellidos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/apellidos"
+        android:layout_width="241dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Escriba los apellidos"
+        app:layout_constraintBottom_toTopOf="@+id/curso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/curso"
+        android:layout_width="234dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="6dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Escriba el curso"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
